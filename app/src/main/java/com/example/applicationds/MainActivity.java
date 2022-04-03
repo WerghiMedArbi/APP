@@ -8,7 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
+// TODO:
+//  add gradient 50%
+//  add app loader
+//  add sqlite leadeboards implementation
+//  app icon
+//  .
 public class MainActivity extends AppCompatActivity {
     private String selectedTopicName = "";
     @Override
