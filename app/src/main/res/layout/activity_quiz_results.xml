@@ -19,9 +19,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/congrattas"
-        app:lottie_speed="20" />
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/heehe"
+         />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/startquizbtn2"

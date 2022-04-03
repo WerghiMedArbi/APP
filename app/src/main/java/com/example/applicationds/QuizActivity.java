@@ -223,14 +223,12 @@ public class QuizActivity extends AppCompatActivity {
         quizTimer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                if (seconds == 0) {
+                if (seconds == 0 && totalTimeInMins > 0) {
                     totalTimeInMins--;
                     seconds = 59;
                 } else if (seconds == 0 && totalTimeInMins == 0) {
                     quizTimer.purge();
                     quizTimer.cancel();
-
-                    Toast.makeText(QuizActivity.this, "Time Over", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(QuizActivity.this, QuizResults.class);
 
