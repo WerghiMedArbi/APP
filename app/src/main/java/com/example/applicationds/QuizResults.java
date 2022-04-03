@@ -15,13 +15,13 @@ public class QuizResults extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_results);
         final AppCompatButton startNewBtn = findViewById(R.id.startquizbtn2);
-        final TextView correctAnswer = findViewById(R.id.correctanswers);
+        final TextView correctAnswers = findViewById(R.id.correctanswers);
         final TextView incorrectAnswers = findViewById(R.id.incorrectanswers);
 
         final int getCorrectAnswers = getIntent().getIntExtra("correct", 0);
         final int getIncorrectAnswers = getIntent().getIntExtra("incorrect", 0);
 
-        correctAnswer.setText((String.valueOf(getCorrectAnswers)));
+        correctAnswers.setText((String.valueOf(getCorrectAnswers)));
         incorrectAnswers.setText(String.valueOf(getIncorrectAnswers));
 
         startNewBtn.setOnClickListener(new View.OnClickListener() {
