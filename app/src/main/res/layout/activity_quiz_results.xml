@@ -22,33 +22,6 @@
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/congratas" />
 
-    <TextView
-        android:id="@+id/correctanswers"
-        android:layout_width="201dp"
-        android:layout_height="70dp"
-        android:text="les réponses correctes: 0"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.561"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
-
-    <TextView
-        android:id="@+id/incorrectanswers"
-        android:layout_width="201dp"
-        android:layout_height="52dp"
-        android:text="les réponses incorrectes: 0"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.561"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.581" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/startquizbtn2"
@@ -62,6 +35,65 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.876" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:text="Les réponses correctes:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="112dp"
+        android:text="Les réponses incorrectes:"
+        app:layout_constraintBottom_toTopOf="@+id/startquizbtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/correctanswers"
+        android:layout_width="24dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="47dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/incorrectanswers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/animationView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/incorrectanswers"
+        android:layout_width="23dp"
+        android:layout_height="28dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/startquizbtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/animationView4"
+        app:layout_constraintVertical_bias="0.497" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
