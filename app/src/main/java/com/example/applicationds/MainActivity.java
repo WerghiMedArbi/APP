@@ -13,6 +13,7 @@ import android.widget.Toast;
 //  add app loader
 //  add sqlite leadeboards implementation
 //  app icon
+//  na7i el top bar
 //  .
 public class MainActivity extends AppCompatActivity {
     private String selectedTopicName = "";
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                selectedTopicName = "smq";
+                selectedTopicName = "SMQ";
                 smq.setBackgroundResource(R.drawable.round_back_white_stroke10);
                 leadership.setBackgroundResource(R.drawable.round_back_white10);
 
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                selectedTopicName = "leadership";
+                selectedTopicName = "Leadership";
                 leadership.setBackgroundResource(R.drawable.round_back_white_stroke10);
                 smq.setBackgroundResource(R.drawable.round_back_white10);
 

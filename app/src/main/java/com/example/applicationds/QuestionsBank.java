@@ -61,9 +61,9 @@ public class QuestionsBank {
 
     public static List<QuestionsList> getQuestions(String selectedTopicName){
         switch (selectedTopicName){
-            case "smq":
+            case "SMQ":
                 return smqQuestions();
-            case "leadership":
+            case "Leadership":
                 return leadershipQuestions();
             default:
                 return smqQuestions();
