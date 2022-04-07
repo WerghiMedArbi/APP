@@ -11,7 +11,8 @@
         android:theme="@style/Theme.ApplicationDS">
         <activity
             android:name=".QuizResults"
-            android:exported="false" />
+            android:exported="true"
+            />
         <activity
             android:name=".QuizActivity"
             android:exported="false" />

@@ -22,7 +22,7 @@ public class QuizActivity extends AppCompatActivity {
     private AppCompatButton option1, option2, option3, option4;
     private AppCompatButton nextBtn;
 
-    private Timer quizTimer;
+    public static Timer quizTimer;
     private int totalTimeInMins = 1;
 
     private int seconds = 0;
@@ -318,4 +318,6 @@ public class QuizActivity extends AppCompatActivity {
         }
 
     }
+
+
 }

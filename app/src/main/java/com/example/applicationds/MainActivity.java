@@ -16,7 +16,7 @@ import android.widget.Toast;
 //  na7i el top bar
 //  .
 public class MainActivity extends AppCompatActivity {
-    private String selectedTopicName = "";
+    public static String selectedTopicName = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

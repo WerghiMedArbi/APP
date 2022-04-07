@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class QuestionsBank {
+
     private static List<QuestionsList> smqQuestions() {
         final List<QuestionsList> questionsLists = new ArrayList<>();
         // questions
