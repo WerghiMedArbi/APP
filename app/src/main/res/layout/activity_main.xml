@@ -1,119 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#011647"
+    android:id="@+id/linearLayoutCompat">
+
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="410dp"
-        android:layout_height="265dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="411dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/quiz_page" />
-
-
-    <com.airbnb.lottie.LottieAnimationView
-    android:id="@+id/animationView2"
-    android:layout_width="71dp"
-    android:layout_height="54dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginStart="335dp"
-    android:layout_marginEnd="10dp"
-    app:lottie_autoPlay="true"
-    app:lottie_loop="true"
-    app:lottie_rawRes="@raw/ftw" />
+        app:lottie_rawRes="@raw/quiz_page"
+        tools:layout_conversion_absoluteHeight="265dp"
+        tools:layout_conversion_absoluteWidth="410dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="147dp"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        >
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/box_outline_accent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/smqlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-
-        <LinearLayout
-            android:id="@+id/smqlayout"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/round_back_white10"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/bebas_neue_thin"
+            android:text="Made with 🤍 by:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
 
-            <ImageView
-
-                android:layout_width="150dp"
-                android:layout_height="80dp"
-                android:src="@drawable/smg" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="SMQ"
-                android:textColor="@color/white"
-                android:textSize="17sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/leadershiplayout"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/round_back_white10"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/bebas_neue_light"
+            android:text="Mouhamed Arbi wegrhi"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="42sp" />
 
-            <ImageView
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/bebas_neue_light"
+            android:text="Ibrahim Doghri"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="42sp" />
 
-                android:layout_width="140dp"
-                android:layout_height="80dp"
-                android:src="@drawable/leader" />
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="LEADERSHIP"
-                android:textColor="@color/white"
-                android:textSize="17sp"
-                android:textStyle="bold" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/smqlayout"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/smq_selector_box"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/startquizbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent">
 
-        </LinearLayout>
+        <ImageView
 
+            android:id="@+id/smqImg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/smg" />
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/smqTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bebas_neue_regular"
+            android:text="SMQ"
+            android:textAlignment="center"
+            android:textColor="@color/main"
+            android:textSize="30sp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/leadershiplayout"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/leadership_selector_box"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/startquizbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+
+            android:id="@+id/leadershipImg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/leader" />
+
+        <TextView
+            android:id="@+id/leadershipTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bebas_neue_regular"
+            android:text="LEADERSHIP"
+            android:textAlignment="center"
+            android:textColor="@color/main"
+            android:textSize="30sp" />
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/startquizbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/eouns_back_yellow20"
-        android:text="Start Quiz"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/call_to_action_disabled"
+        android:enabled="true"
+        android:fontFamily="@font/bebas_neue_bold"
+        android:text="START QUIZ"
         android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
-        />
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

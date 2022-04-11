@@ -3,6 +3,7 @@ package com.example.applicationds;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -66,13 +67,14 @@ public class QuizActivity extends AppCompatActivity {
         option4.setText(questionsLists.get(0).getOption4());
 
         option1.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View view) {
 
                 if (selectedOptionByUser.isEmpty()){
                     selectedOptionByUser = option1.getText().toString();
-                    option1.setBackgroundResource(R.drawable.round_back_red110);
-                    option1.setTextColor(Color.WHITE);
+                    option1.setBackgroundResource(R.drawable.wrong_answer_box);
+                    option1.setTextColor(getResources().getColor(R.color.main));
 
                     revealAnswer();
 
@@ -90,8 +92,8 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (selectedOptionByUser.isEmpty()){
                     selectedOptionByUser = option2.getText().toString();
-                    option2.setBackgroundResource(R.drawable.round_back_red110);
-                    option2.setTextColor(Color.WHITE);
+                    option2.setBackgroundResource(R.drawable.wrong_answer_box);
+                    option2.setTextColor( getResources().getColor(R.color.main));
 
                     revealAnswer();
 
@@ -110,8 +112,8 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (selectedOptionByUser.isEmpty()){
                     selectedOptionByUser = option3.getText().toString();
-                    option3.setBackgroundResource(R.drawable.round_back_red110);
-                    option3.setTextColor(Color.WHITE);
+                    option3.setBackgroundResource(R.drawable.wrong_answer_box);
+                    option3.setTextColor(getResources().getColor( R.color.main));
 
                     revealAnswer();
 
@@ -130,8 +132,8 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (selectedOptionByUser.isEmpty()){
                     selectedOptionByUser = option4.getText().toString();
-                    option4.setBackgroundResource(R.drawable.round_back_red110);
-                    option4.setTextColor(Color.WHITE);
+                    option4.setBackgroundResource(R.drawable.wrong_answer_box);
+                    option4.setTextColor(getResources().getColor(R.color.main));
 
                     revealAnswer();
 
@@ -183,17 +185,17 @@ public class QuizActivity extends AppCompatActivity {
         }
         if (currentQuestionPosition < questionsLists.size()){
             selectedOptionByUser = "";
-            option1.setBackgroundResource((R.drawable.round_back_white_stroke2_10));
-            option1.setTextColor(Color.parseColor("#1F6BB8"));
+            option1.setBackgroundResource((R.drawable.secondary_color_box));
+            option1.setTextColor( getResources().getColor(R.color.main));
 
-            option2.setBackgroundResource((R.drawable.round_back_white_stroke2_10));
-            option2.setTextColor(Color.parseColor("#1F6BB8"));
+            option2.setBackgroundResource((R.drawable.secondary_color_box));
+            option2.setTextColor( getResources().getColor(R.color.main));
 
-            option3.setBackgroundResource((R.drawable.round_back_white_stroke2_10));
-            option3.setTextColor(Color.parseColor("#1F6BB8"));
+            option3.setBackgroundResource((R.drawable.secondary_color_box));
+            option3.setTextColor( getResources().getColor(R.color.main));
 
-            option4.setBackgroundResource((R.drawable.round_back_white_stroke2_10));
-            option4.setTextColor(Color.parseColor("#1F6BB8"));
+            option4.setBackgroundResource((R.drawable.secondary_color_box));
+            option4.setTextColor( getResources().getColor(R.color.main));
 
             questions.setText((currentQuestionPosition+1)+"/"+questionsLists.size());
             question.setText(questionsLists.get(currentQuestionPosition).getQuestion());
@@ -301,20 +303,20 @@ public class QuizActivity extends AppCompatActivity {
     private void revealAnswer(){
         final String getAnswer = questionsLists.get(currentQuestionPosition).getAnswer();
         if(option1.getText().toString().equals(getAnswer)){
-            option1.setBackgroundResource(R.drawable.round_back_green500);
-            option1.setTextColor(Color.WHITE);
+            option1.setBackgroundResource(R.drawable.correct_answer_box);
+            option1.setTextColor(getResources().getColor(R.color.main));
         }
         else if (option2.getText().toString().equals(getAnswer)){
-            option2.setBackgroundResource(R.drawable.round_back_green500);
-            option2.setTextColor(Color.WHITE);
+            option2.setBackgroundResource(R.drawable.correct_answer_box);
+            option2.setTextColor(getResources().getColor(R.color.main));
         }
         else if (option3.getText().toString().equals(getAnswer)){
-            option3.setBackgroundResource(R.drawable.round_back_green500);
-            option3.setTextColor(Color.WHITE);
+            option3.setBackgroundResource(R.drawable.correct_answer_box);
+            option3.setTextColor(getResources().getColor(R.color.main));
         }
         else if (option4.getText().toString().equals(getAnswer)){
-            option4.setBackgroundResource(R.drawable.round_back_green500);
-            option4.setTextColor(Color.WHITE);
+            option4.setBackgroundResource(R.drawable.correct_answer_box);
+            option4.setTextColor(getResources().getColor(R.color.main));
         }
 
     }

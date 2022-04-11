@@ -3,11 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/box_outline_accent.xml" value="0.2595" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/call_to_action.xml" value="0.2595" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/call_to_action_disabled.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/correct_answer_box.xml" value="0.175" />
         <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/eouns_back_yellow20.xml" value="0.2595" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/leadership_selector_box.xml" value="0.2595" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/leadership_selector_box_selected.xml" value="0.175" />
         <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/modern_back_green.xml" value="0.2595" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/question_counter_box.xml" value="0.2595" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/question_header.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/round_back_green10.xml" value="0.2595" />
         <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/round_back_green500.xml" value="0.2595" />
-        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/layout/activity_main.xml" value="0.25271739130434784" />
-        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/layout/activity_quiz.xml" value="0.25271739130434784" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/round_back_red110.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/round_back_white10.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/round_back_white_stroke10.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/round_back_white_stroke20.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/round_back_white_stroke2_10.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/save_to_database_button_box.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/save_to_database_button_disabled.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/secondary_color_box.xml" value="0.2595" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/smq_selector_box.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/smq_selector_box_selected.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/username_textfield_box.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/drawable/wrong_answer_box.xml" value="0.175" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/layout/activity_quiz.xml" value="0.264" />
         <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/layout/activity_quiz_results.xml" value="0.264" />
         <entry key="..\:/Users/Arfizato/Desktop/Arfizato/DevAndroid/ApplicationDS/app/src/main/res/layout/leaderboard.xml" value="0.4" />
         <entry key="..\:/Users/arbio/AndroidStudioProjects/ApplicationDS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.149" />

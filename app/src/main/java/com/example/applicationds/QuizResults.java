@@ -53,6 +53,7 @@ public class QuizResults extends AppCompatActivity {
             Lottie.setAnimation(R.raw.counter);
             Lottie.setMinAndMaxFrame(start, start+59);
         }
+
         Lottie.setRepeatCount(0);
         Lottie.setSpeed(0.5F);
 
@@ -88,7 +89,10 @@ public class QuizResults extends AppCompatActivity {
                 int topFive=1;
                 StringBuffer buffer = new StringBuffer();
                 while (res.moveToNext() && topFive<=5  ){
-                    buffer.append("═══╰" + topFive+"╮═══\nName: "+res.getString(1)+"\nScore: "+res.getString(2)+"\n");
+                    buffer.append("═══╰"+topFive+"╮═══\n" +
+                            "Name: "+res.getString(1)+"\n" +
+                            "Score: "+res.getString(2)+"\n"
+                    );
                     topFive++;
                 }
                 TextView scoreboard = new TextView(QuizResults.this);
@@ -99,8 +103,9 @@ public class QuizResults extends AppCompatActivity {
 
                 TextView title = new TextView(QuizResults.this);
                 title.setText("Leaderoard");
+                title.setTextColor(getResources().getColor(R.color.gradientMain) );
                 title.setGravity(Gravity.CENTER_HORIZONTAL);
-                title.setTextColor(getColor(R.color.Salmon));
+                title.setTextColor(getColor(R.color.main));
                 title.setTextSize(50);
 
                 AlertDialog.Builder builder= new AlertDialog.Builder( QuizResults.this);
@@ -120,16 +125,21 @@ public class QuizResults extends AppCompatActivity {
             public void onClick(View view) {
                 final TextView usertag=findViewById(R.id.username);
                 final String username= String.valueOf(usertag.getText());
+                String buttonErrorMessage= "Bellehi Ekteb Esmek";
                 if (username.length() == 0){
-                    Toast.makeText(QuizResults.this, "Bellehi Ekteb Esmek", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(QuizResults.this, buttonErrorMessage , Toast.LENGTH_SHORT).show();
                 }else{
                     if(MainActivity.selectedTopicName.equals("SMQ"))
                         dbs.insertDatabase(username, String.valueOf(result));
                     else
                         dbl.insertDatabase(username, String.valueOf(result));
 
+
                     usertag.onEditorAction(EditorInfo.IME_ACTION_DONE);
                     usertag.setText("");
+
+                    saveBtn.setBackgroundResource (R.drawable.save_to_database_button_disabled);
+                    saveBtn.setEnabled(false);
                 }
             }
         });

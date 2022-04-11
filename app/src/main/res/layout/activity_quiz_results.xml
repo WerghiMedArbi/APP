@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/main"
     tools:context=".QuizResults">
 
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView4"
-        android:layout_width="413dp"
-        android:layout_height="450dp"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,8 +25,8 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/resultAnimation"
-        android:layout_width="414dp"
-        android:layout_height="389dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,17 +41,19 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/startquizbtn2"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginHorizontal="10dp"
-        android:background="@drawable/round_back_green10"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/call_to_action"
+        android:fontFamily="@font/bebas_neue_bold"
         android:text="Start New Quiz"
         android:textColor="#ffffff"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.946" />
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
@@ -72,34 +75,45 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/scoreButton"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/round_back_light_yellow20"
+        android:background="@drawable/box_outline_accent"
+        android:fontFamily="@font/bebas_neue_regular"
         android:text="LEADERBOARD"
-        android:textColor="@color/white"
+        android:textColor="@color/secondary"
+        android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/startquizbtn2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/username_textfield_box"
+        android:fontFamily="@font/bebas_neue_regular"
         android:hint="Username"
         android:inputType="textPersonName"
+        android:maxLength="15"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/main"
+        android:textColorHint="@color/transparent_main"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.412"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultAnimation" />
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/saveToDB"
-        android:layout_width="72dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="2dp"
-        android:background="@drawable/modern_back_green"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/save_to_database_button_box"
         android:src="@drawable/save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

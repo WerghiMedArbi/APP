@@ -1,6 +1,8 @@
 package com.example.applicationds;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.LinearLayoutCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,16 +23,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final LinearLayout smq = findViewById(R.id.smqlayout);
+        final LinearLayoutCompat smq = findViewById(R.id.smqlayout);
         final LinearLayout leadership = findViewById(R.id.leadershiplayout);
         final Button startBtn = findViewById(R.id.startquizbtn);
+
+        selectedTopicName="";
+        startBtn.setBackgroundResource(R.drawable.call_to_action_disabled);
+
         smq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 selectedTopicName = "SMQ";
-                smq.setBackgroundResource(R.drawable.round_back_white_stroke10);
-                leadership.setBackgroundResource(R.drawable.round_back_white10);
+                smq.setBackgroundResource(R.drawable.smq_selector_box_selected);
+                leadership.setBackgroundResource(R.drawable.leadership_selector_box);
+
+                startBtn.setEnabled(true);
+                startBtn.setBackgroundResource(R.drawable.call_to_action);
 
             }
         });
@@ -39,9 +48,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 selectedTopicName = "Leadership";
-                leadership.setBackgroundResource(R.drawable.round_back_white_stroke10);
-                smq.setBackgroundResource(R.drawable.round_back_white10);
+                leadership.setBackgroundResource(R.drawable.leadership_selector_box_selected);
+                smq.setBackgroundResource(R.drawable.smq_selector_box);
 
+                startBtn.setEnabled(true);
+                startBtn.setBackgroundResource(R.drawable.call_to_action);
             }
         });
         startBtn.setOnClickListener(new View.OnClickListener() {
